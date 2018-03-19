@@ -1,0 +1,59 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{bbold}
+\usepackage{siunitx}
+\usepackage[margin=1.00in]{geometry}
+\usepackage{lmodern}
+
+%Ambienti matematici
+
+\theoremstyle{plain} 
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{cor}{Corollario}[teo]
+\newtheorem{lem}[teo]{Lemma}
+\newtheorem{prop}[teo]{Proposizione} 
+\newtheorem{post}{Postulato}
+\renewcommand\thepost{\Roman{post}}
+
+\newtheorem*{post*}{Postulato}
+
+\theoremstyle{definition} 
+\newtheorem{defn}{Definizione}
+\newtheorem{nb}{Importante}[subsection]
+
+\theoremstyle{remark} 
+\newtheorem*{oss}{Osservazione} 
+\newtheorem{ese}{Esempio}
+
+\newtheorem*{exe}{Esempio}
+\newtheorem*{svol}{Svolgimento}
+
+\newcommand{\scal}[2]{\ensuremath{\left<#1,#2\right>}}
+\newcommand{\com}[2]{\ensuremath{\left[#1,#2\right]}}
+\newcommand{\der}[3][]{\ensuremath{\dfrac{d^{#1}#2}{d#3^{#1}}}}
+\newcommand{\derp}[3][]{\ensuremath{\dfrac{\partial^{#1}#2}{\partial#3^{#1}}}}
+\newcommand{\prob}[1]{\ensuremath{\mathcal{P}\left[#1\right]}}
+\renewcommand{\mod}[1]{\ensuremath{\left|#1\right|}}
+
+\newcommand{\hilb}{\ensuremath{\mathcal{H}}}
+\newcommand{\chem}[1]{\ensuremath{\text{#1}}}
+
+\begin{document}
+	\begin{titlepage}
+		\title{ Appunti di Chimica}
+		\date{ }
+	\end{titlepage}
+	\maketitle
+		\subfile{SubFiles/Lezione2.tex}
+		\subfile{SubFiles/Lezione3.tex}
+\end{document}
